@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem de Carinho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .message-box {
+            border: 2px solid #FFB6C1;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #FFF0F5;
+            display: inline-block;
+            max-width: 500px;
+        }
+        .message {
+            font-size: 20px;
+            color: #FF69B4;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #FF69B4;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #FF69B4;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #FF1493;
+        }
+    </style>
+</head>
+<body>
+    <h1>Envie uma Mensagem de Carinho!</h1>
+    <div>
+        <input type="text" id="nomeInput" placeholder="Digite o nome dela..." />
+        <button onclick="enviarMensagem()">Enviar Mensagem</button>
+    </div>
+    <div class="message-box" id="mensagemBox" style="display:none;">
+        <p class="message" id="mensagem"></p>
+    </div>
+
+    <script>
+        // Função para gerar a mensagem de carinho
+        const gerarMensagem = (nome) => {
+            return `Amor, sei que as coisas estão difíceis agora, mas quero te lembrar que tudo vai melhorar. Você é incrível e forte, e eu estou aqui ao seu lado, sempre. Eu te amo de uma maneira que não sei nem como descrever, e quero que saiba que não importa o que aconteça, você sempre terá o meu apoio e carinho. Vai passar, e eu estarei com você em cada passo. Você merece ser feliz, e vou fazer tudo o que puder para te ver sorrir novamente. Te amo, ${nome}! 💖\n\nP.S.: Sua bunda que eu não te amo mocreia, mas é tudo brincadeira, tá? 😜`
+        };
+
+        // Função que é chamada ao clicar no botão
+        function enviarMensagem() {
+            const nome = document.getElementById("nomeInput").value;
+            if (nome) {
+                const mensagem = gerarMensagem(nome);
+                document.getElementById("mensagem").textContent = mensagem;
+                document.getElementById("mensagemBox").style.display = "block";
+            } else {
+                alert("Por favor, digite o nome dela!");
+            }
+        }
+    </script>
+</body>
+</html>
