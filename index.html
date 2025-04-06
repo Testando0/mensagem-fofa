@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagem de Carinho</title>
+    <title>Mensagenzinha ^-^</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,10 +45,10 @@
     </style>
 </head>
 <body>
-    <h1>Envie uma Mensagem de Carinho!</h1>
+    <h1>Mensagenzinha ^-^</h1>
     <div>
-        <input type="text" id="nomeInput" placeholder="Digite o nome dela..." />
-        <button onclick="enviarMensagem()">Enviar Mensagem</button>
+        <input type="text" id="nomeInput" placeholder="Digite Seu Nome" />
+        <button onclick="enviarMensagem()">Enviar</button>
     </div>
     <div class="message-box" id="mensagemBox" style="display:none;">
         <p class="message" id="mensagem"></p>
@@ -57,7 +57,7 @@
     <script>
         // Função para gerar a mensagem de carinho
         const gerarMensagem = (nome) => {
-            return `Amor, sei que as coisas estão difíceis agora, mas quero te lembrar que tudo vai melhorar. Você é incrível e forte, e eu estou aqui ao seu lado, sempre. Eu te amo de uma maneira que não sei nem como descrever, e quero que saiba que não importa o que aconteça, você sempre terá o meu apoio e carinho. Vai passar, e eu estarei com você em cada passo. Você merece ser feliz, e vou fazer tudo o que puder para te ver sorrir novamente. Te amo, ${nome}! 💖\n\nP.S.: Sua bunda que eu não te amo mocreia, mas é tudo brincadeira, tá? 😜`
+            return `Oiê ${nome}, Está Mensagem É Para Te Dizer Que Você É Uma Pessoa Incrível, Alguém Com Um Coração Gigante E Os Melhores Conselhos Do Mundo, Mesmo Não Conversando Todos Os Dias Saiba Que Estarei Sempre Aqui 🙃 Você É Incrível, Te Amo 🫶`
         };
 
         // Função que é chamada ao clicar no botão
@@ -68,7 +68,7 @@
                 document.getElementById("mensagem").textContent = mensagem;
                 document.getElementById("mensagemBox").style.display = "block";
             } else {
-                alert("Por favor, digite o nome dela!");
+                alert("Por Favor, Digite Seu Nome");
             }
         }
     </script>
